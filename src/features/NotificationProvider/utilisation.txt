@@ -1,0 +1,12 @@
+import { useNotification } from "./NotificationContext"
+
+const { addNotification } = useNotification();
+
+addNotification("message", "type", TempsEnMs, () => function);
+
+les type (couleur) sont les suivante (visible dans le css):
+    "blue" (#006BB4)
+    "red" #DE443B
+    "orange" #F69401
+    "green" #3A9775
+    "gray"

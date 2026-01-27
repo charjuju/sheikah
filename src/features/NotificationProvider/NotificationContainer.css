@@ -1,0 +1,104 @@
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    pointer-events: none;
+}
+
+.notification {
+    pointer-events: all;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    background-color: var(--notif-bg);
+    box-shadow: 0 4px 0 var(--notif-shadow);
+}
+
+.notification:hover {
+    background-color: var(--notif-hover);
+}
+
+.notification:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 var(--notif-shadow);
+}
+
+.notification-content {
+    flex: 1;
+    word-wrap: break-word;
+}
+
+.notification-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+    box-shadow: none;
+}
+
+.notification-close:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.notification-close:active {
+    transform: none;
+    box-shadow: none;
+}
+
+.notification-blue {
+    --notif-bg: #006BB4;
+    --notif-hover: #005a97;
+    --notif-shadow: #004a7c;
+}
+
+.notification-red {
+    --notif-bg: #DE443B;
+    --notif-hover: #c73a32;
+    --notif-shadow: #a83028;
+}
+
+.notification-orange {
+    --notif-bg: #F69401;
+    --notif-hover: #d68001;
+    --notif-shadow: #a86201;
+}
+
+.notification-green {
+    --notif-bg: #3A9775;
+    --notif-hover: #317f63;
+    --notif-shadow: #286751;
+}
+
+.notification-gray {
+    --notif-bg: #6E7E7E;
+    --notif-hover: #5d6a6a;
+    --notif-shadow: #4d5959;
+}
+
