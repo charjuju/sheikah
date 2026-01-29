@@ -16,7 +16,7 @@ function App() {
       {mode === "Reconaisance" ?
         <ModeReconaisance combo={combo} setCombo={setCombo} difficult={difficult} />
         :
-        <ModeDessin setCombo={setCombo} difficult={difficult} letterIndex={letterIndex} setLetterIndex={setLetterIndex} />
+        <ModeDessin setCombo={setCombo} difficult={difficult} setLetterIndex={setLetterIndex} />
       }
     </div >
   )
